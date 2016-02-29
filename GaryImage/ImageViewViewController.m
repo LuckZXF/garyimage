@@ -74,13 +74,10 @@ static CGSize AssetGridThumbnailSize;
                                     contentMode:PHImageContentModeAspectFill
                                         options:nil
                                   resultHandler:^(UIImage *result, NSDictionary *info) {
-                                      // Set the cell's thumbnail image if it's still showing the same asset.
-                                     // if ([cell.representedAssetIdentifier isEqualToString:asset.localIdentifier]) {
                                           cell.photo.image = result;
                                           cell.photo.tag = indexPath.row + 100;
                                           cell.photo.contentMode = UIViewContentModeScaleAspectFill;
                                           cell.photo.clipsToBounds = YES;
-                                     // }
                                       NSLog(@"ww");
                                   }];
     }

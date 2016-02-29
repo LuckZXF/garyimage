@@ -5,7 +5,8 @@
 //  Created by 赵希帆 on 16/2/29.
 //  Copyright © 2016年 赵希帆. All rights reserved.
 //
-
+#define Screen_Width    [UIScreen mainScreen].bounds.size.width
+#define Screen_Height   [UIScreen mainScreen].bounds.size.height
 #import "GaryTools.h"
 
 #import <UIKit/UIKit.h>
@@ -23,6 +24,8 @@ static CGRect largeFrame;  //确定图片放大最大的程度
     UIWindow *window=[UIApplication sharedApplication].keyWindow;
     UIView *backgroundView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     oldframe=[ImageView convertRect:ImageView.bounds toView:window];
+    oldFrame = ImageView.frame;
+    largeFrame = CGRectMake(0-Screen_Width, 0-Screen_Height, 3*oldFrame.size.width, 3*oldFrame.size.height);
     backgroundView.backgroundColor=[UIColor blackColor];
     backgroundView.alpha=0;
     UIImageView *imageView=[[UIImageView alloc]initWithFrame:oldframe];
@@ -83,8 +86,15 @@ static CGRect largeFrame;  //确定图片放大最大的程度
 + (void) pinchView:(UIPinchGestureRecognizer *)pinchGestureRecognizer
 {
     UIView *view = pinchGestureRecognizer.view;
+    UIImageView *imageview = (UIImageView *)[pinchGestureRecognizer.view viewWithTag:tag];
     if (pinchGestureRecognizer.state == UIGestureRecognizerStateBegan || pinchGestureRecognizer.state == UIGestureRecognizerStateChanged) {
         view.transform = CGAffineTransformScale(view.transform, pinchGestureRecognizer.scale, pinchGestureRecognizer.scale);
+        if (imageview.frame.size.width < oldFrame.size.width) {
+            imageview.frame = oldFrame;
+        }
+        if (imageview.frame.size.width > 3*oldFrame.size.width) {
+            imageview.frame = largeFrame;
+        }
         pinchGestureRecognizer.scale = 1;
     }
 }
