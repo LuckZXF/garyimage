@@ -1,0 +1,668 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D33CC0051C83EA000059EADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC0041C83EA000059EADD /* main.m */; };
+		D33CC0081C83EA000059EADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC0071C83EA000059EADD /* AppDelegate.m */; };
+		D33CC00B1C83EA000059EADD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC00A1C83EA000059EADD /* ViewController.m */; };
+		D33CC00E1C83EA000059EADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33CC00C1C83EA000059EADD /* Main.storyboard */; };
+		D33CC0101C83EA000059EADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D33CC00F1C83EA000059EADD /* Assets.xcassets */; };
+		D33CC0131C83EA000059EADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D33CC0111C83EA000059EADD /* LaunchScreen.storyboard */; };
+		D33CC01E1C83EA000059EADD /* GaryImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC01D1C83EA000059EADD /* GaryImageTests.m */; };
+		D33CC0291C83EA000059EADD /* GaryImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC0281C83EA000059EADD /* GaryImageUITests.m */; };
+		D33CC0381C83EBBE0059EADD /* GaryCollectionVC.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC0371C83EBBE0059EADD /* GaryCollectionVC.m */; };
+		D33CC03B1C83EDD90059EADD /* GaryCollectionCellCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC03A1C83EDD90059EADD /* GaryCollectionCellCollectionViewCell.m */; };
+		D33CC03E1C83EEE50059EADD /* GaryTools.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC03D1C83EEE50059EADD /* GaryTools.m */; };
+		D33CC0441C8418E80059EADD /* ZXFScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC0431C8418E80059EADD /* ZXFScrollViewController.m */; };
+		D33CC0481C842FE00059EADD /* LocalImageList.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC0471C842FE00059EADD /* LocalImageList.m */; };
+		D33CC04E1C84476E0059EADD /* GaryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC04C1C84476E0059EADD /* GaryTableViewCell.m */; };
+		D33CC04F1C84476E0059EADD /* GaryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D33CC04D1C84476E0059EADD /* GaryTableViewCell.xib */; };
+		D33CC0581C84523F0059EADD /* GaryImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC0571C84523F0059EADD /* GaryImageViewController.m */; };
+		D33CC05B1C8456E90059EADD /* GaryPhotoCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC05A1C8456E90059EADD /* GaryPhotoCollectionViewCell.m */; };
+		D33CC05E1C845B890059EADD /* ImageViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC05D1C845B890059EADD /* ImageViewViewController.m */; };
+		D5B4F166A1894EE0C39EEA1D /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A6C860CFE7B68C6566236D6 /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D33CC01A1C83EA000059EADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D33CBFF81C83EA000059EADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D33CBFFF1C83EA000059EADD;
+			remoteInfo = GaryImage;
+		};
+		D33CC0251C83EA000059EADD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D33CBFF81C83EA000059EADD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D33CBFFF1C83EA000059EADD;
+			remoteInfo = GaryImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A6C860CFE7B68C6566236D6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48D76D405E99E72A9DD6BC8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D29B93163D8D988B519FD776 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		D33CC0001C83EA000059EADD /* GaryImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaryImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33CC0041C83EA000059EADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		D33CC0061C83EA000059EADD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D33CC0071C83EA000059EADD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D33CC0091C83EA000059EADD /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		D33CC00A1C83EA000059EADD /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D33CC00D1C83EA000059EADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D33CC00F1C83EA000059EADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D33CC0121C83EA000059EADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D33CC0141C83EA000059EADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D33CC0191C83EA000059EADD /* GaryImageTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaryImageTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33CC01D1C83EA000059EADD /* GaryImageTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaryImageTests.m; sourceTree = "<group>"; };
+		D33CC01F1C83EA000059EADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D33CC0241C83EA000059EADD /* GaryImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GaryImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D33CC0281C83EA000059EADD /* GaryImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GaryImageUITests.m; sourceTree = "<group>"; };
+		D33CC02A1C83EA000059EADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D33CC0361C83EBBE0059EADD /* GaryCollectionVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaryCollectionVC.h; sourceTree = "<group>"; };
+		D33CC0371C83EBBE0059EADD /* GaryCollectionVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaryCollectionVC.m; sourceTree = "<group>"; };
+		D33CC0391C83EDD90059EADD /* GaryCollectionCellCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaryCollectionCellCollectionViewCell.h; sourceTree = "<group>"; };
+		D33CC03A1C83EDD90059EADD /* GaryCollectionCellCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaryCollectionCellCollectionViewCell.m; sourceTree = "<group>"; };
+		D33CC03C1C83EEE50059EADD /* GaryTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaryTools.h; sourceTree = "<group>"; };
+		D33CC03D1C83EEE50059EADD /* GaryTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaryTools.m; sourceTree = "<group>"; };
+		D33CC0421C8418E80059EADD /* ZXFScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZXFScrollViewController.h; sourceTree = "<group>"; };
+		D33CC0431C8418E80059EADD /* ZXFScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZXFScrollViewController.m; sourceTree = "<group>"; };
+		D33CC0461C842FE00059EADD /* LocalImageList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocalImageList.h; sourceTree = "<group>"; };
+		D33CC0471C842FE00059EADD /* LocalImageList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocalImageList.m; sourceTree = "<group>"; };
+		D33CC04B1C84476E0059EADD /* GaryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaryTableViewCell.h; sourceTree = "<group>"; };
+		D33CC04C1C84476E0059EADD /* GaryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaryTableViewCell.m; sourceTree = "<group>"; };
+		D33CC04D1C84476E0059EADD /* GaryTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GaryTableViewCell.xib; sourceTree = "<group>"; };
+		D33CC0561C84523F0059EADD /* GaryImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GaryImageViewController.h; sourceTree = "<group>"; };
+		D33CC0571C84523F0059EADD /* GaryImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GaryImageViewController.m; sourceTree = "<group>"; };
+		D33CC0591C8456E90059EADD /* GaryPhotoCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GaryPhotoCollectionViewCell.h; path = ../GaryPhotoCollectionViewCell.h; sourceTree = "<group>"; };
+		D33CC05A1C8456E90059EADD /* GaryPhotoCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GaryPhotoCollectionViewCell.m; path = ../GaryPhotoCollectionViewCell.m; sourceTree = "<group>"; };
+		D33CC05C1C845B890059EADD /* ImageViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewViewController.h; sourceTree = "<group>"; };
+		D33CC05D1C845B890059EADD /* ImageViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D33CBFFD1C83EA000059EADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D5B4F166A1894EE0C39EEA1D /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33CC0161C83EA000059EADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33CC0211C83EA000059EADD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4629E609DF7F7E70A040F252 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A48D76D405E99E72A9DD6BC8 /* Pods.debug.xcconfig */,
+				D29B93163D8D988B519FD776 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C479EF07DBB0C656F9135574 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1A6C860CFE7B68C6566236D6 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D33CBFF71C83EA000059EADD = {
+			isa = PBXGroup;
+			children = (
+				D33CC0021C83EA000059EADD /* GaryImage */,
+				D33CC01C1C83EA000059EADD /* GaryImageTests */,
+				D33CC0271C83EA000059EADD /* GaryImageUITests */,
+				D33CC0011C83EA000059EADD /* Products */,
+				4629E609DF7F7E70A040F252 /* Pods */,
+				C479EF07DBB0C656F9135574 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D33CC0011C83EA000059EADD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D33CC0001C83EA000059EADD /* GaryImage.app */,
+				D33CC0191C83EA000059EADD /* GaryImageTests.xctest */,
+				D33CC0241C83EA000059EADD /* GaryImageUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D33CC0021C83EA000059EADD /* GaryImage */ = {
+			isa = PBXGroup;
+			children = (
+				D33CC0061C83EA000059EADD /* AppDelegate.h */,
+				D33CC0071C83EA000059EADD /* AppDelegate.m */,
+				D33CC0091C83EA000059EADD /* ViewController.h */,
+				D33CC00A1C83EA000059EADD /* ViewController.m */,
+				D33CC00C1C83EA000059EADD /* Main.storyboard */,
+				D33CC00F1C83EA000059EADD /* Assets.xcassets */,
+				D33CC0111C83EA000059EADD /* LaunchScreen.storyboard */,
+				D33CC0141C83EA000059EADD /* Info.plist */,
+				D33CC0031C83EA000059EADD /* Supporting Files */,
+				D33CC0361C83EBBE0059EADD /* GaryCollectionVC.h */,
+				D33CC0371C83EBBE0059EADD /* GaryCollectionVC.m */,
+				D33CC0391C83EDD90059EADD /* GaryCollectionCellCollectionViewCell.h */,
+				D33CC03A1C83EDD90059EADD /* GaryCollectionCellCollectionViewCell.m */,
+				D33CC03C1C83EEE50059EADD /* GaryTools.h */,
+				D33CC03D1C83EEE50059EADD /* GaryTools.m */,
+				D33CC0421C8418E80059EADD /* ZXFScrollViewController.h */,
+				D33CC0431C8418E80059EADD /* ZXFScrollViewController.m */,
+				D33CC0461C842FE00059EADD /* LocalImageList.h */,
+				D33CC0471C842FE00059EADD /* LocalImageList.m */,
+				D33CC04B1C84476E0059EADD /* GaryTableViewCell.h */,
+				D33CC04C1C84476E0059EADD /* GaryTableViewCell.m */,
+				D33CC04D1C84476E0059EADD /* GaryTableViewCell.xib */,
+				D33CC0561C84523F0059EADD /* GaryImageViewController.h */,
+				D33CC0571C84523F0059EADD /* GaryImageViewController.m */,
+				D33CC0591C8456E90059EADD /* GaryPhotoCollectionViewCell.h */,
+				D33CC05A1C8456E90059EADD /* GaryPhotoCollectionViewCell.m */,
+				D33CC05C1C845B890059EADD /* ImageViewViewController.h */,
+				D33CC05D1C845B890059EADD /* ImageViewViewController.m */,
+			);
+			path = GaryImage;
+			sourceTree = "<group>";
+		};
+		D33CC0031C83EA000059EADD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				D33CC0041C83EA000059EADD /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D33CC01C1C83EA000059EADD /* GaryImageTests */ = {
+			isa = PBXGroup;
+			children = (
+				D33CC01D1C83EA000059EADD /* GaryImageTests.m */,
+				D33CC01F1C83EA000059EADD /* Info.plist */,
+			);
+			path = GaryImageTests;
+			sourceTree = "<group>";
+		};
+		D33CC0271C83EA000059EADD /* GaryImageUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D33CC0281C83EA000059EADD /* GaryImageUITests.m */,
+				D33CC02A1C83EA000059EADD /* Info.plist */,
+			);
+			path = GaryImageUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D33CBFFF1C83EA000059EADD /* GaryImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D33CC02D1C83EA000059EADD /* Build configuration list for PBXNativeTarget "GaryImage" */;
+			buildPhases = (
+				482C2C7511F2D5D8CC789CEB /* Check Pods Manifest.lock */,
+				D33CBFFC1C83EA000059EADD /* Sources */,
+				D33CBFFD1C83EA000059EADD /* Frameworks */,
+				D33CBFFE1C83EA000059EADD /* Resources */,
+				9CD6C3525D4907B291BA60B8 /* Embed Pods Frameworks */,
+				B94039ABBEFFDF4485A0BC0B /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GaryImage;
+			productName = GaryImage;
+			productReference = D33CC0001C83EA000059EADD /* GaryImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D33CC0181C83EA000059EADD /* GaryImageTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D33CC0301C83EA000059EADD /* Build configuration list for PBXNativeTarget "GaryImageTests" */;
+			buildPhases = (
+				D33CC0151C83EA000059EADD /* Sources */,
+				D33CC0161C83EA000059EADD /* Frameworks */,
+				D33CC0171C83EA000059EADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D33CC01B1C83EA000059EADD /* PBXTargetDependency */,
+			);
+			name = GaryImageTests;
+			productName = GaryImageTests;
+			productReference = D33CC0191C83EA000059EADD /* GaryImageTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D33CC0231C83EA000059EADD /* GaryImageUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D33CC0331C83EA000059EADD /* Build configuration list for PBXNativeTarget "GaryImageUITests" */;
+			buildPhases = (
+				D33CC0201C83EA000059EADD /* Sources */,
+				D33CC0211C83EA000059EADD /* Frameworks */,
+				D33CC0221C83EA000059EADD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D33CC0261C83EA000059EADD /* PBXTargetDependency */,
+			);
+			name = GaryImageUITests;
+			productName = GaryImageUITests;
+			productReference = D33CC0241C83EA000059EADD /* GaryImageUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D33CBFF81C83EA000059EADD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "赵希帆";
+				TargetAttributes = {
+					D33CBFFF1C83EA000059EADD = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 479JY7DY3H;
+					};
+					D33CC0181C83EA000059EADD = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D33CBFFF1C83EA000059EADD;
+					};
+					D33CC0231C83EA000059EADD = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = D33CBFFF1C83EA000059EADD;
+					};
+				};
+			};
+			buildConfigurationList = D33CBFFB1C83EA000059EADD /* Build configuration list for PBXProject "GaryImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D33CBFF71C83EA000059EADD;
+			productRefGroup = D33CC0011C83EA000059EADD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D33CBFFF1C83EA000059EADD /* GaryImage */,
+				D33CC0181C83EA000059EADD /* GaryImageTests */,
+				D33CC0231C83EA000059EADD /* GaryImageUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D33CBFFE1C83EA000059EADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33CC04F1C84476E0059EADD /* GaryTableViewCell.xib in Resources */,
+				D33CC0131C83EA000059EADD /* LaunchScreen.storyboard in Resources */,
+				D33CC0101C83EA000059EADD /* Assets.xcassets in Resources */,
+				D33CC00E1C83EA000059EADD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33CC0171C83EA000059EADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33CC0221C83EA000059EADD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		482C2C7511F2D5D8CC789CEB /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9CD6C3525D4907B291BA60B8 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B94039ABBEFFDF4485A0BC0B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D33CBFFC1C83EA000059EADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33CC05B1C8456E90059EADD /* GaryPhotoCollectionViewCell.m in Sources */,
+				D33CC05E1C845B890059EADD /* ImageViewViewController.m in Sources */,
+				D33CC03E1C83EEE50059EADD /* GaryTools.m in Sources */,
+				D33CC03B1C83EDD90059EADD /* GaryCollectionCellCollectionViewCell.m in Sources */,
+				D33CC00B1C83EA000059EADD /* ViewController.m in Sources */,
+				D33CC0381C83EBBE0059EADD /* GaryCollectionVC.m in Sources */,
+				D33CC0081C83EA000059EADD /* AppDelegate.m in Sources */,
+				D33CC0481C842FE00059EADD /* LocalImageList.m in Sources */,
+				D33CC04E1C84476E0059EADD /* GaryTableViewCell.m in Sources */,
+				D33CC0581C84523F0059EADD /* GaryImageViewController.m in Sources */,
+				D33CC0051C83EA000059EADD /* main.m in Sources */,
+				D33CC0441C8418E80059EADD /* ZXFScrollViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33CC0151C83EA000059EADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33CC01E1C83EA000059EADD /* GaryImageTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D33CC0201C83EA000059EADD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D33CC0291C83EA000059EADD /* GaryImageUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D33CC01B1C83EA000059EADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D33CBFFF1C83EA000059EADD /* GaryImage */;
+			targetProxy = D33CC01A1C83EA000059EADD /* PBXContainerItemProxy */;
+		};
+		D33CC0261C83EA000059EADD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D33CBFFF1C83EA000059EADD /* GaryImage */;
+			targetProxy = D33CC0251C83EA000059EADD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D33CC00C1C83EA000059EADD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D33CC00D1C83EA000059EADD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D33CC0111C83EA000059EADD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D33CC0121C83EA000059EADD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D33CC02B1C83EA000059EADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D33CC02C1C83EA000059EADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D33CC02E1C83EA000059EADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A48D76D405E99E72A9DD6BC8 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = GaryImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyx.GaryImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 armv7s armv7";
+			};
+			name = Debug;
+		};
+		D33CC02F1C83EA000059EADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D29B93163D8D988B519FD776 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = GaryImage/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyx.GaryImage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				VALID_ARCHS = "arm64 armv7s armv7";
+			};
+			name = Release;
+		};
+		D33CC0311C83EA000059EADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GaryImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyx.GaryImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaryImage.app/GaryImage";
+			};
+			name = Debug;
+		};
+		D33CC0321C83EA000059EADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = GaryImageTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyx.GaryImageTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GaryImage.app/GaryImage";
+			};
+			name = Release;
+		};
+		D33CC0341C83EA000059EADD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GaryImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyx.GaryImageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GaryImage;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		D33CC0351C83EA000059EADD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = GaryImageUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hyx.GaryImageUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = GaryImage;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D33CBFFB1C83EA000059EADD /* Build configuration list for PBXProject "GaryImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D33CC02B1C83EA000059EADD /* Debug */,
+				D33CC02C1C83EA000059EADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D33CC02D1C83EA000059EADD /* Build configuration list for PBXNativeTarget "GaryImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D33CC02E1C83EA000059EADD /* Debug */,
+				D33CC02F1C83EA000059EADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D33CC0301C83EA000059EADD /* Build configuration list for PBXNativeTarget "GaryImageTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D33CC0311C83EA000059EADD /* Debug */,
+				D33CC0321C83EA000059EADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D33CC0331C83EA000059EADD /* Build configuration list for PBXNativeTarget "GaryImageUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D33CC0341C83EA000059EADD /* Debug */,
+				D33CC0351C83EA000059EADD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D33CBFF81C83EA000059EADD /* Project object */;
+}
