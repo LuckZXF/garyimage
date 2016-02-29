@@ -9,10 +9,23 @@
 #import "GaryPhotoCollectionViewCell.h"
 
 @implementation GaryPhotoCollectionViewCell
-- (void)awakeFromNib {
-    // Initialization code
-    _photo.contentMode = UIViewContentModeScaleAspectFill;
-    [_photo setClipsToBounds:YES];
-    
+
+- (id)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        // Initialization code
+        _photo.contentMode = UIViewContentModeScaleAspectFill;
+        [_photo setClipsToBounds:YES];
+        [self createCell];
+    }
+    return self;
+}
+
+
+- (void)createCell
+{
+    _photo = [[UIImageView alloc]initWithFrame:self.contentView.bounds];
+    [self.contentView addSubview:_photo];
 }
 @end

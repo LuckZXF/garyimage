@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0C39CC71C8491EE003F91FF /* GaryPhotoCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0C39CC61C8491EE003F91FF /* GaryPhotoCollectionViewCell.xib */; };
 		D33CC0051C83EA000059EADD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC0041C83EA000059EADD /* main.m */; };
 		D33CC0081C83EA000059EADD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC0071C83EA000059EADD /* AppDelegate.m */; };
 		D33CC00B1C83EA000059EADD /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D33CC00A1C83EA000059EADD /* ViewController.m */; };
@@ -48,6 +49,7 @@
 /* Begin PBXFileReference section */
 		1A6C860CFE7B68C6566236D6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48D76D405E99E72A9DD6BC8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		B0C39CC61C8491EE003F91FF /* GaryPhotoCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GaryPhotoCollectionViewCell.xib; sourceTree = "<group>"; };
 		D29B93163D8D988B519FD776 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D33CC0001C83EA000059EADD /* GaryImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GaryImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D33CC0041C83EA000059EADD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -180,6 +182,7 @@
 				D33CC0571C84523F0059EADD /* GaryImageViewController.m */,
 				D33CC0591C8456E90059EADD /* GaryPhotoCollectionViewCell.h */,
 				D33CC05A1C8456E90059EADD /* GaryPhotoCollectionViewCell.m */,
+				B0C39CC61C8491EE003F91FF /* GaryPhotoCollectionViewCell.xib */,
 				D33CC05C1C845B890059EADD /* ImageViewViewController.h */,
 				D33CC05D1C845B890059EADD /* ImageViewViewController.m */,
 			);
@@ -322,6 +325,7 @@
 				D33CC04F1C84476E0059EADD /* GaryTableViewCell.xib in Resources */,
 				D33CC0131C83EA000059EADD /* LaunchScreen.storyboard in Resources */,
 				D33CC0101C83EA000059EADD /* Assets.xcassets in Resources */,
+				B0C39CC71C8491EE003F91FF /* GaryPhotoCollectionViewCell.xib in Resources */,
 				D33CC00E1C83EA000059EADD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -551,6 +555,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GaryImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyx.GaryImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -567,6 +572,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = GaryImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hyx.GaryImage;
 				PRODUCT_NAME = "$(TARGET_NAME)";

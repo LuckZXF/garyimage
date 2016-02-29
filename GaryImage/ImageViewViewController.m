@@ -31,19 +31,26 @@ static CGSize AssetGridThumbnailSize;
     //cell注册
     [_collectionView registerClass:[GaryPhotoCollectionViewCell class] forCellWithReuseIdentifier:@"ZXFCollectionViewCell1"];
     // [self.view addSubview:_collectionView];
-    _collectionView.frame = CGRectMake(0, 20, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 70);
+    _collectionView.frame = CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64);
     [self.view addSubview:_collectionView];
     
     [[PHPhotoLibrary sharedPhotoLibrary] registerChangeObserver:self];
     self.imageManager = [[PHCachingImageManager alloc] init];
-    [self.imageManager stopCachingImagesForAllAssets];
-    self.previousPreheatRect = CGRectZero;
+    [self resetCachedAssets];
+    CGFloat scale = [UIScreen mainScreen].scale;
+    CGSize cellSize = ((UICollectionViewFlowLayout *)flowLayout).itemSize;
+    AssetGridThumbnailSize = CGSizeMake(cellSize.width * scale, cellSize.height * scale);
     // Do any additional setup after loading the view.
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)resetCachedAssets {
+    [self.imageManager stopCachingImagesForAllAssets];
+    self.previousPreheatRect = CGRectZero;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section
@@ -61,19 +68,20 @@ static CGSize AssetGridThumbnailSize;
         // Request an image for the asset from the PHCachingImageManager.
         cell.representedAssetIdentifier = asset.localIdentifier;
         
-        cell.photo.image = nil;
+       // cell.photo.image = nil;
         [self.imageManager requestImageForAsset:asset
                                      targetSize:AssetGridThumbnailSize
                                     contentMode:PHImageContentModeAspectFill
                                         options:nil
                                   resultHandler:^(UIImage *result, NSDictionary *info) {
                                       // Set the cell's thumbnail image if it's still showing the same asset.
-                                      if ([cell.representedAssetIdentifier isEqualToString:asset.localIdentifier]) {
+                                     // if ([cell.representedAssetIdentifier isEqualToString:asset.localIdentifier]) {
                                           cell.photo.image = result;
                                           cell.photo.tag = indexPath.row + 100;
                                           cell.photo.contentMode = UIViewContentModeScaleAspectFill;
                                           cell.photo.clipsToBounds = YES;
-                                      }
+                                     // }
+                                      NSLog(@"ww");
                                   }];
     }
     return cell;
