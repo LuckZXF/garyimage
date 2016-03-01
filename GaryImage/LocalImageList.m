@@ -116,11 +116,12 @@
     if (cell == nil) {
         cell= (GaryTableViewCell *)[[[NSBundle  mainBundle]  loadNibNamed:@"GaryTableViewCell" owner:self options:nil]  lastObject];
     }
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     PHFetchResult *fetchResult = self.sectionFetchResults[indexPath.section];
     PHCollection *collection = fetchResult[indexPath.row];
     PHAssetCollection *assetCollection = (PHAssetCollection *)collection;
     PHFetchResult *assetsFetchResult = [PHAsset fetchAssetsInAssetCollection:assetCollection options:nil];
-    NSLog(@"%lu",(long)indexPath.row);
+   // NSLog(@"%lu",(long)indexPath.row);
     //cell.textLabel.text = collection.localizedTitle;
     if (assetsFetchResult.count > 0) {
         [self.imageManager requestImageForAsset:assetsFetchResult[0]
@@ -189,10 +190,11 @@
     imgvc.assetsFetchResults = assetsFetchResult;
     imgvc.assetCollection = assetCollection;
     imgvc.navigationTitle = collection.localizedTitle;
+    [_delegate pushview:imgvc];
 //    [self presentViewController:imgvc animated:YES completion:nil];
 //    UIViewController *imgvc = [[UIViewController alloc] init];
 //    imgvc.view.backgroundColor = [UIColor redColor];
 //    UINavigationController *naVC = [[UINavigationController alloc]initWithRootViewController:self];
-    [((AppDelegate *)[UIApplication sharedApplication].delegate).nav pushViewController:imgvc animated:YES];
+    //[((AppDelegate *)[UIApplication sharedApplication].delegate).nav pushViewController:imgvc animated:YES];
 }
 @end

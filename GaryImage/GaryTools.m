@@ -17,6 +17,7 @@ CGFloat currentScale;
 static CGFloat tag;
 static CGRect oldFrame;    //保存图片原来的大小
 static CGRect largeFrame;  //确定图片放大最大的程度
+static UIImageView *imageView;
 @implementation GaryTools
 +(void)showImage:(UIImageView *)ImageView{
     tag = ImageView.tag;
@@ -24,11 +25,11 @@ static CGRect largeFrame;  //确定图片放大最大的程度
     UIWindow *window=[UIApplication sharedApplication].keyWindow;
     UIView *backgroundView=[[UIView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
     oldframe=[ImageView convertRect:ImageView.bounds toView:window];
-    oldFrame = ImageView.frame;
-    largeFrame = CGRectMake(0-Screen_Width, 0-Screen_Height, 3*oldFrame.size.width, 3*oldFrame.size.height);
+//    oldFrame = ImageView.frame;
+//    largeFrame = CGRectMake(0-Screen_Width, 0+Screen_Height, 3*oldFrame.size.width, 3*oldFrame.size.height);
     backgroundView.backgroundColor=[UIColor blackColor];
     backgroundView.alpha=0;
-    UIImageView *imageView=[[UIImageView alloc]initWithFrame:oldframe];
+    imageView=[[UIImageView alloc]initWithFrame:oldframe];
     imageView.image=image;
     imageView.userInteractionEnabled=YES;
     imageView.multipleTouchEnabled = YES;
@@ -53,6 +54,8 @@ static CGRect largeFrame;  //确定图片放大最大的程度
     [UIView animateWithDuration:0.3 animations:^{
         imageView.frame=CGRectMake(0,([UIScreen mainScreen].bounds.size.height-image.size.height*[UIScreen mainScreen].bounds.size.width/image.size.width)/2, [UIScreen mainScreen].bounds.size.width, image.size.height*[UIScreen mainScreen].bounds.size.width/image.size.width);
         backgroundView.alpha=1;
+        oldFrame = imageView.frame;
+        largeFrame = CGRectMake(0-Screen_Width, 0, 3*oldFrame.size.width, 3*oldFrame.size.height);
     } completion:^(BOOL finished) {
         
     }];
@@ -86,14 +89,14 @@ static CGRect largeFrame;  //确定图片放大最大的程度
 + (void) pinchView:(UIPinchGestureRecognizer *)pinchGestureRecognizer
 {
     UIView *view = pinchGestureRecognizer.view;
-    UIImageView *imageview = (UIImageView *)[pinchGestureRecognizer.view viewWithTag:tag];
+   // UIImageView *imageview = (UIImageView *)[pinchGestureRecognizer.view viewWithTag:tag];
     if (pinchGestureRecognizer.state == UIGestureRecognizerStateBegan || pinchGestureRecognizer.state == UIGestureRecognizerStateChanged) {
         view.transform = CGAffineTransformScale(view.transform, pinchGestureRecognizer.scale, pinchGestureRecognizer.scale);
-        if (imageview.frame.size.width < oldFrame.size.width) {
-            imageview.frame = oldFrame;
+        if (((CGRect)[imageView frame]).size.width < Screen_Width) {
+            imageView.frame = oldFrame;
         }
-        if (imageview.frame.size.width > 3*oldFrame.size.width) {
-            imageview.frame = largeFrame;
+        if (((CGRect)[imageView frame]).size.width > 3*Screen_Width) {
+            imageView.frame = largeFrame;
         }
         pinchGestureRecognizer.scale = 1;
     }

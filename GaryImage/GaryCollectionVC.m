@@ -47,7 +47,7 @@
     _collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:flowLayout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
-    _collectionView.backgroundColor = [UIColor clearColor];
+    _collectionView.backgroundColor = [UIColor whiteColor];
     currentIndex = 1;
     self.automaticallyAdjustsScrollViewInsets = false;
     //cell注册

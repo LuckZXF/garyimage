@@ -26,7 +26,7 @@ static CGSize AssetGridThumbnailSize;
     _collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:flowLayout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
-    _collectionView.backgroundColor = [UIColor clearColor];
+    _collectionView.backgroundColor = [UIColor whiteColor];
     self.automaticallyAdjustsScrollViewInsets = false;
     //cell注册
     [_collectionView registerClass:[GaryPhotoCollectionViewCell class] forCellWithReuseIdentifier:@"ZXFCollectionViewCell1"];

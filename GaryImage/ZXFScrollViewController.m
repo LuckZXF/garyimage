@@ -8,13 +8,14 @@
 
 #import "ZXFScrollViewController.h"
 #import "GaryCollectionVC.h"
+#import "LocalImageList.h"
 #define Screen_Width    [UIScreen mainScreen].bounds.size.width
 #define Screen_Height   [UIScreen mainScreen].bounds.size.height
 #define RatioX         (MIN(Screen_Width,Screen_Height))/320.0
 #define RatioY         (((MAX(Screen_Height,Screen_Width))<568.0)?1.0:(MAX(Screen_Height,Screen_Width)/568.0))
 #define RGBA(R, G, B, A) [UIColor colorWithRed:R / 255.0 green:G / 255.0 blue:B / 255.0 alpha:A]
 
-@interface ZXFScrollViewController ()
+@interface ZXFScrollViewController ()<garydelegate>
 {
     NSInteger currentIndex;
 }
@@ -61,8 +62,9 @@
     _netVc.view.frame = CGRectMake(0, 0, _scrollview.frame.size.width, _scrollview.frame.size.height);
     [_scrollview addSubview:_netVc.view];
     _imagelist = [[LocalImageList alloc] init];
-   // _imagelist.view.backgroundColor = [UIColor clearColor];
+    _imagelist.view.backgroundColor = [UIColor whiteColor];
     _imagelist.view.frame = CGRectMake(_scrollview.frame.size.width, 0, _scrollview.frame.size.width, _scrollview.frame.size.height);
+    _imagelist.delegate = self;
     [_scrollview addSubview:_imagelist.view];
     // Do any additional setup after loading the view.
 }
@@ -80,6 +82,13 @@
         _horizonSperatorView.frame = CGRectMake(Screen_Width/2 + 5*RatioX, 51, 40*RatioX, 2);
     }
 }
+
+-(void)pushview:(ImageViewViewController *)vc{
+    self.navigationController.view.backgroundColor = [UIColor whiteColor];
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 /*
 #pragma mark - Navigation

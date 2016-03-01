@@ -10,6 +10,14 @@
 #import "GaryTableViewCell.h"
 #import "ImageViewViewController.h"
 
+@protocol garydelegate <NSObject>
+
+@optional
+-(void) pushview:(ImageViewViewController *)vc;
+
+@end
+
 @interface LocalImageList : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@property(nonatomic,weak) id<garydelegate> delegate;
 
 @end

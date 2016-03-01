@@ -26,9 +26,10 @@ static CGSize AssetGridThumbnailSize;
     _collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:flowLayout];
     _collectionView.delegate = self;
     _collectionView.dataSource = self;
-    _collectionView.backgroundColor = [UIColor clearColor];
+    _collectionView.backgroundColor = [UIColor colorWithRed:0.0/255 green:0.0/255 blue:0.0/255 alpha:0.12];
     self.automaticallyAdjustsScrollViewInsets = false;
     //cell注册
+    
     [_collectionView registerClass:[GaryPhotoCollectionViewCell class] forCellWithReuseIdentifier:@"ZXFCollectionViewCell1"];
     // [self.view addSubview:_collectionView];
     _collectionView.frame = CGRectMake(0, 64, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height - 64);
@@ -78,7 +79,6 @@ static CGSize AssetGridThumbnailSize;
                                           cell.photo.tag = indexPath.row + 100;
                                           cell.photo.contentMode = UIViewContentModeScaleAspectFill;
                                           cell.photo.clipsToBounds = YES;
-                                      NSLog(@"ww");
                                   }];
     }
     return cell;
